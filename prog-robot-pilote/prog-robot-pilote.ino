@@ -23,6 +23,10 @@ void loop() {
     Sx.write(rotation_servo(X)); // Envoi des signaux de rotation.
     delay(50);
   }
-
-
+  else
+  { 
+    X = analogRead(Y_pin);
+    Sx.write(rotation_servo_douvan_deye(X)); // Envoi des signaux de rotation.
+    delay(50);
+  }
 }
