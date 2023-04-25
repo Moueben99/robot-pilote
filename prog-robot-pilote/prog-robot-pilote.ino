@@ -18,7 +18,11 @@ void setup() {
 
 
 void loop() {
-    
+    if(X == analogRead(X_pin))
+  {
+    Sx.write(rotation_servo(X)); // Envoi des signaux de rotation.
+    delay(50);
+  }
 
 
 }
