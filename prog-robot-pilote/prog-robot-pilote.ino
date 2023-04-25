@@ -30,3 +30,9 @@ void loop() {
     delay(50);
   }
 }
+
+
+byte rotation_servo(unsigned short n) // Fonction de correspondance.
+{
+  return (byte)(-0.175953 * n + 1023);
+}
