@@ -36,3 +36,8 @@ byte rotation_servo(unsigned short n) // Fonction de correspondance.
 {
   return (byte)(-0.175953 * n + 1023);
 }
+
+byte rotation_servo_avance_recule(unsigned short m) // Fonction de correspondance.
+{
+  return (byte)(-0.175953 * m + 180);
+}
